@@ -363,6 +363,10 @@ header {
 
 @media (max-width: 600px) {
   .card {
-    max-width: 20em;
+    max-width: 15em;
+  }
+  img{
+    max-width: 2em;
+
   }
 }
