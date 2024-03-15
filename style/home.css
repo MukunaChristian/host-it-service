@@ -75,9 +75,24 @@ img {
   align-self: flex-start;
 }
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1300px;
   margin: 0 auto;
+}
+.text-section{
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+.child1-text p {
+max-width: 40em;
+}
+.title h1{
+  text-align: center;
+
 }
 
 header {
@@ -181,19 +196,48 @@ header {
   background-color: #23424a;
 }
 
-.pricing-section {
-  margin-top: 1em !important;
-  padding: 1em;
-  margin: auto;
-  width: 50em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  text-align: center; /* Center-align the content */
-  gap: 20px; /* Add gap between grid items */
+.all-web {
+  padding: 20px;
+  text-align: center;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* One column for mobile view */
+  }
+}
+
+
+.pricing-section {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  margin: auto !important;
+  border: red 2px solid;
+  gap: 1em;
+  margin: auto;
+}
+
 
 .pricing-section h1 {
   grid-column: 1 / -1; /* Span the entire grid */
+}
+.pricing-card{
+width: 20em; 
 }
 
 .social-icons a.icon-facebook {
@@ -214,8 +258,8 @@ header {
 .footer {
   background-color: #136c72;
   color: #fff;
-  padding: 50px 0;
   text-align: center;
+  height: fit-content;
 }
 
 .footer__content {
@@ -318,6 +362,7 @@ header {
   background-color: #f9f9f9;
   padding: 100px 0;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .about-us .container {
@@ -336,6 +381,57 @@ header {
   color: #666;
 }
 
+
+
+
+.pricing-section h1 {
+  margin-bottom: 20px;
+}
+
+.pricing-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.pricing-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 1.2em;
+  color: #136c72;
+  margin-bottom: 10px;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #136c72;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0e5262;
+}
+
+
 /* Media Query for Mobile Responsiveness */
 @media (min-width: 768px) {
   .footer__content {
@@ -347,11 +443,12 @@ header {
     flex: 1 1 45%;
     margin: 0;
   }
+ 
 }
 
 @media (max-width: 600px) {
   .pricing-section {
-    grid-template-columns: 1fr; /* Change to single column layout */
+    flex-direction: column;
   }
   .service-section {
     max-width: 1em;
@@ -368,5 +465,23 @@ header {
   img{
     max-width: 2em;
 
+  }
+  .hero{
+    height: fit-content;
+  }
+  .about-us{
+   max-height: 20em;
+    border: red 2px solid;
+
+  }
+  .text-section{
+    flex-direction: column;
+  }
+
+  .img1{
+    max-width: 500em !important;
+  }
+  .child1-text{
+    text-align: center;
   }
 }
