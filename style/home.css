@@ -25,6 +25,11 @@ img {
   overflow: hidden;
   height: 400px;
 }
+.btn1{
+  position: relative;
+  top: 10em;
+  left: 45em;
+}
 .container {
   position: relative;
   z-index: 1;
@@ -227,7 +232,6 @@ header {
   justify-content: center;
   text-align: center; 
   margin: auto !important;
-  border: red 2px solid;
   gap: 1em;
   margin: auto;
 }
@@ -365,9 +369,6 @@ width: 20em;
   margin-bottom: 1em;
 }
 
-.about-us .container {
-}
-
 .about-us h2 {
   font-size: 2em;
   margin-bottom: 20px;
@@ -379,6 +380,11 @@ width: 20em;
   line-height: 1.2;
   margin-bottom: 20px;
   color: #666;
+}
+
+.grid-item{
+  border: 2px solid #136c72;
+
 }
 
 
@@ -394,6 +400,7 @@ width: 20em;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  border: 2px solid #136c72 ;
 }
 
 .pricing-card h2 {
@@ -459,8 +466,9 @@ width: 20em;
 }
 
 @media (max-width: 600px) {
-  .card {
+  .pricing-card {
     max-width: 15em;
+    margin: auto;
   }
   img{
     max-width: 2em;
@@ -468,10 +476,21 @@ width: 20em;
   }
   .hero{
     height: fit-content;
+    margin-top: 1em;
+  }
+  .text{
+    max-width: 30em;
+    margin-top: 1em;
+    display: none;
+  }
+  .btn1{
+    display: flex;
+    align-items: center;
+   margin-left: 8em;
+
   }
   .about-us{
-   max-height: 20em;
-    border: red 2px solid;
+   height: fit-content;
 
   }
   .text-section{
