@@ -15,3 +15,19 @@
 // .catch(error => {
 //     console.error('Error fetching background image:', error);
 // });
+document.addEventListener('DOMContentLoaded', function() {
+    const serviceItems = document.querySelectorAll('.service-item');
+
+    serviceItems.forEach(item => {
+        const serviceTitle = item.querySelector('h3');
+        const serviceDetails = item.querySelector('.service-details');
+
+        serviceTitle.addEventListener('click', () => {
+            if (serviceDetails.style.maxHeight) {
+                serviceDetails.style.maxHeight = null;
+            } else {
+                serviceDetails.style.maxHeight = serviceDetails.scrollHeight + 'px';
+            }
+        });
+    });
+});
