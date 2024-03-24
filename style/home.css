@@ -384,6 +384,9 @@ width: 20em;
 
 .grid-item{
   border: 2px solid #136c72;
+  max-width: 27em; 
+  margin: auto;
+
 
 }
 
@@ -461,59 +464,8 @@ width: 20em;
   gap: 20px;
 }
 
-/* Media Query for Mobile View */
-@media (max-width: 768px) {
-  .row {
-      display: flex;
-      justify-content: space-between; /* Align logo and menu toggle button at opposite ends */
-      align-items: center;
-  }
 
-  .nav {
-      display: none; /* Hide the navigation by default */
-      position: absolute;
-      top: 100%; /* Position the menu box below the header */
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 1em;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-  }
 
-  .menu-toggle {
-      display: none; /* Hide the checkbox input */
-  }
-
-  .menu-icon {
-      display: block; /* Display the menu icon */
-      cursor: pointer;
-  }
-
-  .menu-icon::before {
-      content: "\2630"; /* Unicode character for hamburger icon */
-      font-size: 1.5em;
-  }
-
-  .menu-toggle:checked + .nav {
-      display: block; /* Show the navigation when menu toggle button is checked */
-  }
-
-  .nav__list {
-      list-style: none;
-      padding: 0;
-  }
-
-  .nav__item {
-      margin-bottom: 1em;
-  }
-
-  .nav__link {
-      text-decoration: none;
-      color: #333;
-  }
-}
 
 
 .service-item {
@@ -523,6 +475,8 @@ width: 20em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 70em;
+  margin: auto;
 }
 
 .service-item:hover {
@@ -539,9 +493,9 @@ width: 20em;
   transition: background-color 0.3s;
 }
 
-.service-item:hover h3 {
+/* .service-item:hover h3 {
   background-color: #f9f9f9;
-}
+} */
 
 .service-details {
   max-height: 0;
@@ -554,6 +508,26 @@ width: 20em;
   display: inline-block;
   vertical-align: middle;
 }
+.graphic-design {
+  background-image: url('../assets/g.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.graphic-design1 {
+  background-image: url('../assets/p.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-details {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color opacity as needed */
+  border-radius: 10px;
+}
+
 
 
 .service-details p {
@@ -602,6 +576,16 @@ width: 20em;
   .pricing-card {
     max-width: 15em;
     margin: auto;
+  }
+  .grid-item{
+    margin: auto;
+    max-width: 15em;
+
+
+  }
+  .service-item {
+    margin: auto;
+    max-width: 15em;
   }
   img{
     margin: auto;

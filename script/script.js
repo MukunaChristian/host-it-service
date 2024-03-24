@@ -31,3 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menu-toggle');
+    var navList = document.querySelector('.nav__list');
+
+    menuToggle.addEventListener('change', function() {
+        if (this.checked) {
+            navList.classList.add('active');
+        } else {
+            navList.classList.remove('active');
+        }
+    });
+});
+
