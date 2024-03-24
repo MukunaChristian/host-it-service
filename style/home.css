@@ -465,7 +465,59 @@ width: 20em;
 }
 
 
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .row {
+      display: flex;
+      justify-content: space-between; /* Align logo and menu toggle button at opposite ends */
+      align-items: center;
+  }
 
+  .nav {
+      display: none; /* Hide the navigation by default */
+      position: absolute;
+      top: 100%; /* Position the menu box below the header */
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 1em;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+  }
+
+  .menu-toggle {
+      display: none; /* Hide the checkbox input */
+  }
+
+  .menu-icon {
+      display: block; /* Display the menu icon */
+      cursor: pointer;
+  }
+
+  .menu-icon::before {
+      content: "\2630"; /* Unicode character for hamburger icon */
+      font-size: 1.5em;
+  }
+
+  .menu-toggle:checked + .nav {
+      display: block; /* Show the navigation when menu toggle button is checked */
+  }
+
+  .nav__list {
+      list-style: none;
+      padding: 0;
+  }
+
+  .nav__item {
+      margin-bottom: 1em;
+  }
+
+  .nav__link {
+      text-decoration: none;
+      color: #333;
+  }
+}
 
 
 .service-item {
@@ -574,18 +626,16 @@ width: 20em;
 
 @media (max-width: 600px) {
   .pricing-card {
-    max-width: 15em;
+    max-width: 17em;
     margin: auto;
   }
   .grid-item{
     margin: auto;
-    max-width: 15em;
-
-
+  max-width: 50em !important;
   }
   .service-item {
     margin: auto;
-    max-width: 15em;
+    max-width: 22em;
   }
   img{
     margin: auto;
