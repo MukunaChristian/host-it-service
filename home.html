@@ -13,18 +13,45 @@
 
 <body>
     <header>
-        <div class="row">
-            <a href="#" class="logo"><img src="./assets/logo1.png" alt=""></a>
 
-            <label for="menu-toggle" class="menu-icon"></label>
-            <nav class="nav">
-                <ul class="nav__list nav__list--primary">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a><svg width="26px" height="26px" viewBox="-0.5 0 25 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21.32L21 3.32001" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 3.32001L21 21.32" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a></li>
+
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#servicesSection" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+
+            </ul>
+            <ul>
+                <li class="nav__item"><a href="#" class="logo"><img src="./assets/logo1.png" alt=""></a></li>
+                <li class="hideOnMobile"><a href="#homeSection" class="nav__link">Home</a></li>
+                <li class="hideOnMobile"><a href="#servicesSection" class="nav__link">Services</a></li>
+                <li class="hideOnMobile"><a href="#aboutSection" class="nav__link">About</a></li>
+                <li class="hideOnMobile"><a href="#" class="nav__link">Contact</a></li>
+
+                <li class="menu" onclick=showSidebar()><a href=""><svg width="26px" height="26px" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+
+                        </svg></a></li>
+            </ul>
+        </nav>
         </div>
     </header>
 
@@ -32,14 +59,15 @@
     <div class="hero" id="hero">
         <div class="container row">
             <div class="text">
+                <h1>Welcome to Host-IT Services</h1>
                 <p>Ready to experience the difference with Host-IT Services? Contact us today to learn more
                     about our services and discover how we can help your business thrive in the digital age.
-                    We're excited to embark on this journey with you! </p>
+                    We're excited to embark on this journey with you!</p>
             </div>
             <button class="btn1">Get Web Hosting</button>
-
         </div>
     </div>
+    
 
     <!-- <section class="text-section  ">
 
@@ -95,37 +123,13 @@
             </div>
         </section>
 
-        <section class="all-web container">
-            <h1>Features</h1>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h2>Free SSL Certificates</h2>
-                    <p>Deploy free Let's Encrypt SSL Certificate for your website using our automated SSL deployment
-                        tool. Our system will also auto-renew your certificate.</p>
-                </div>
-                <div class="grid-item">
-                    <h2>24/7 Support</h2>
-                    <p>Get round-the-clock support from our team of experts. We're here to help you with any issues or
-                        questions you may have.</p>
-                </div>
-                <div class="grid-item">
-                    <h2>Fast Loading Times</h2>
-                    <p>Experience lightning-fast loading times for your website with our high-performance servers and
-                        optimized infrastructure.</p>
-                </div>
-                <div class="grid-item">
-                    <h2>Scalable Infrastructure</h2>
-                    <p>Scale your website effortlessly as your business grows. Our infrastructure is designed to handle
-                        any amount of traffic.</p>
-                </div>
-            </div>
-        </section>
+
 
 
 
 
     </div>
-    <section class="our-services">
+    <section id="servicesSection" class="our-services">
         <div class="container">
             <h2>Our Services</h2>
             <div class="service-list">
@@ -199,7 +203,8 @@
                             through stunning visual experiences.</p>
 
                         <p>We understand the power of captivating design in making a lasting impression. From
-                            eyecatching logos and branding to engaging marketing materials, we specialize in creating
+                            eye&nbsp;catching logos and branding to engaging marketing materials, we specialize in
+                            creating
                             visuals that speak volumes about your brand.</p>
 
                         <p>Whether you're looking to refresh your company's image, launch a new product campaign,
@@ -246,7 +251,8 @@
                             visuals
                             that tell your unique story and leave a lasting impression.</p>
                         <p>With a keen eye for detail and a commitment to excellence, we specialize in delivering
-                            highquality photography services that exceed expectations. Whether you're celebrating a
+                            high&nbsp;quality photography services that exceed expectations. Whether you're celebrating
+                            a
                             milestone, showcasing your products, or documenting a special event, we have the creativity
                             and expertise to bring your vision to life.</p>
                         <p>Let us be your trusted partner in capturing the moments that matter most. Discover the
@@ -310,14 +316,14 @@
 
 
 
-    <section class="about-us">
+    <section id="aboutSection" class="about-us">
         <div class="container">
             <h2>About Our Hosting Company</h2>
-            At Host-IT Services, we're more than just a web hosƟng and IT services company, we're your
-            dedicated partner in navigaƟng the digital landscape. With a passion for innovaƟon and a
-            commitment to excellence, we deliver tailored soluƟons that empower businesses to thrive
-            online. Our experienced team brings experƟse and personalized support to every project,
-            ensuring seamless integraƟon and opƟmal performance. Trust us to be your trusted ally in
+            At Host-IT Services, we're more than just a web hosting and IT services company, we're your
+            dedicated partner in navigating the digital landscape. With a passion for innovation and a
+            commitment to excellence, we deliver tailored solutions that empower businesses to thrive
+            online. Our experienced team brings experose and personalized support to every project,
+            ensuring seamless integration and optimal performance. Trust us to be your trusted ally in
             achieving your digital goals. Welcome to Host-IT Services, where success meets innovation.
         </div>
     </section>
@@ -330,12 +336,12 @@
                 <p>Email: info@example.com</p>
                 <p>Working Hours: Mon-Fri 9am-5pm</p>
             </div>
-            <div>
+            <div class="service">
                 <h3>Service</h3>
                 <p> Web development </p>
                 <p>Web hosƟng & Domains
                 </p>
-                <p>Digital markeƟng (we manage your social media, ex: Facebook, Instagram etc…) </p>
+                <p>Digital marketing (we manage your social media, ex: Facebook, Instagram etc…) </p>
                 <p>Website management </p>
                 <p>Branding </p>
                 <p>Photography </p>
@@ -345,12 +351,18 @@
             <div class="footer__social">
                 <h3>Follow Us</h3>
                 <ul class="social-icons">
-                    <a href="#" class="icon-facebook"><img src="./assets/img1.jpg" alt="Facebook"></a>
-                    <li><a href="#" class="icon-twitter"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                    <li><a href="#" class="icon-instagram"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.fb.com/l/6lp1kJRRR" class="icon-link"><img src="./assets/f.png"
+                                alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/host_it_services?igsh=Mm9udzQzMHRqaW93"
+                            class="icon-link"><img src="./assets/instagram.png" alt="Instagram"></a></li>
                 </ul>
-                efe
+
             </div>
+
+
+
+
+
 
 
         </div>

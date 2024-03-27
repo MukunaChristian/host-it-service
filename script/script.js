@@ -15,34 +15,78 @@
 // .catch(error => {
 //     console.error('Error fetching background image:', error);
 // });
-document.addEventListener('DOMContentLoaded', function() {
-    const serviceItems = document.querySelectorAll('.service-item');
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceItems = document.querySelectorAll(".service-item");
 
-    serviceItems.forEach(item => {
-        const serviceTitle = item.querySelector('h3');
-        const serviceDetails = item.querySelector('.service-details');
+  serviceItems.forEach((item) => {
+    const serviceTitle = item.querySelector("h3");
+    const serviceDetails = item.querySelector(".service-details");
 
-        serviceTitle.addEventListener('click', () => {
-            if (serviceDetails.style.maxHeight) {
-                serviceDetails.style.maxHeight = null;
-            } else {
-                serviceDetails.style.maxHeight = serviceDetails.scrollHeight + 'px';
-            }
-        });
+    serviceTitle.addEventListener("click", () => {
+      if (serviceDetails.style.maxHeight) {
+        serviceDetails.style.maxHeight = null;
+      } else {
+        serviceDetails.style.maxHeight = serviceDetails.scrollHeight + "px";
+      }
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var menuToggle = document.getElementById("menu-toggle");
+  var navList = document.querySelector(".nav__list");
+
+  menuToggle.addEventListener("change", function () {
+    if (this.checked) {
+      navList.classList.add("active");
+    } else {
+      navList.classList.remove("active");
+    }
+  });
+});
+
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex'
+}
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = 'none'
+}
+// Get all the social icons
+
+
+document.getElementById('homeButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    document.getElementById('homeSection').scrollIntoView({ behavior: 'smooth' }); // Scroll to the home section
+});
+
+document.getElementById('servicesButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    document.getElementById('servicesSection').scrollIntoView({ behavior: 'smooth' }); 
+    sidebar.style.display = "none";
+   
+});
+
+document.getElementById('aboutButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    document.getElementById('aboutSection').scrollIntoView({ behavior: 'smooth' }); // Scroll to the about section
+});
+
+document.getElementById('contactButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' }); // Scroll to the contact section
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var menuToggle = document.getElementById('menu-toggle');
-    var navList = document.querySelector('.nav__list');
+document.addEventListener("DOMContentLoaded", function() {
+    var section = document.getElementById("hero");
+    var sectionPosition = section.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
 
-    menuToggle.addEventListener('change', function() {
-        if (this.checked) {
-            navList.classList.add('active');
-        } else {
-            navList.classList.remove('active');
+    window.addEventListener("scroll", function() {
+        if (sectionPosition < screenPosition) {
+            section.classList.add("animated");
         }
     });
 });
-
