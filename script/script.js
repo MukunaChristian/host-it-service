@@ -46,13 +46,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.style.display = 'flex'
+  document.querySelector('.sidebar').style.display = 'block';
 }
+
 function hideSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = 'none'
+  document.querySelector('.sidebar').style.display = 'none';
 }
+
+// Close sidebar when clicking outside of it
+document.addEventListener('click', function(event) {
+  const sidebar = document.querySelector('.sidebar');
+  const menuButton = document.querySelector('.menu');
+  const isClickInsideSidebar = sidebar.contains(event.target);
+  const isClickInsideMenuButton = menuButton.contains(event.target);
+  
+  if (!isClickInsideSidebar && !isClickInsideMenuButton) {
+      sidebar.style.display = 'none';
+  }
+});
+
+
+
 // Get all the social icons
 
 

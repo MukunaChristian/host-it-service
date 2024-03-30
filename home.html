@@ -13,47 +13,48 @@
 
 <body>
     <header>
-
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a><svg width="26px" height="26px" viewBox="-0.5 0 25 25" fill="none"
+                <li onclick="hideSidebar()">
+                    <a><svg width="26px" height="26px" viewBox="-0.5 0 25 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 21.32L21 3.32001" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
                             <path d="M3 3.32001L21 21.32" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
-                        </svg></a></li>
+                        </svg></a>
+                </li>
 
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#servicesSection" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-
+                <li><a href="#" class="nav__link">Home</a></li>
+                <li><a href="#servicesSection" class="nav__link">Services</a></li>
+                <li><a href="#" class="nav__link">About</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
             </ul>
             <ul>
-                <li class="nav__item"><a href="#" class="logo"><img src="./assets/logo1.png" alt=""></a></li>
+                <li><a href="#" class="logo"><img src="./assets/logo1.png" alt=""></a></li>
                 <li class="hideOnMobile"><a href="#homeSection" class="nav__link">Home</a></li>
                 <li class="hideOnMobile"><a href="#servicesSection" class="nav__link">Services</a></li>
                 <li class="hideOnMobile"><a href="#aboutSection" class="nav__link">About</a></li>
-                <li class="hideOnMobile"><a href="#" class="nav__link">Contact</a></li>
-
-                <li class="menu" onclick=showSidebar()><a href=""><svg width="26px" height="26px" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-
+                <li class="hideOnMobile"><a href="contact.html" class="nav__link">Contact</a></li>
+                <li class="menu" onclick="showSidebar()">
+                    <a href="#"><svg width="26px" height="26px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-
                             <g id="SVGRepo_iconCarrier">
                                 <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </g>
-
-                        </svg></a></li>
+                        </svg></a>
+                </li>
             </ul>
         </nav>
-        </div>
     </header>
+
+
+
+
+
 
 
     <div class="hero" id="hero">
@@ -64,71 +65,67 @@
                     about our services and discover how we can help your business thrive in the digital age.
                     We're excited to embark on this journey with you!</p>
             </div>
-            <button class="btn1">Get Web Hosting</button>
+            <button class="btn1">Get Web Hosting </button>
         </div>
     </div>
-    
 
-    <!-- <section class="text-section  ">
 
-        <div class="child2-text"><img class="img1" src="./assets/img1.jpg" alt=""></div>
-        <div class="child1-text">
-            <h3>business Growh By</h3>
-            <h1>get your website online with a new domain and hosting</h1>
-            <p>Our service includes registering a new domain name, selecting a reliable hosting plan, and setting up
-                your website. With our packages, you'll get a custom domain that represents your brand and a fast,
-                secure, and reliable hosting environment to host your website. Our team of experts will handle all
-                the technical details, so you can focus on creating and promoting your website.</p>
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Web Hosting Plans</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p>R99/month</p>
+                    <ul>
+                        <li>1GB Storage (SSD)</li>
+                        <li>Host 1 website domain</li>
+                        <li>FREE cPanel</li>
+                        <li>Unlimited bandwidth</li>
+                        <li>10 Email accounts</li>
+                        <li>Free SSL Certificate</li>
+                        <li>Free Website Migration</li>
+                        <li>Uptime guarantee</li>
+                        <li>Hosting Support</li>
+                    </ul>
+                    <button> <a href="contact.html"> Order Now</a> </button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p>R149/month</p>
+                    <ul>
+                        <li>2GB Storage (SSD)</li>
+                        <li>Host 2 website domain</li>
+                        <li>FREE cPanel</li>
+                        <li>Unlimited bandwidth</li>
+                        <li>25 Email accounts</li>
+                        <li>Free SSL Certificate</li>
+                        <li>Free Website Migration</li>
+                        <li>Uptime guarantee</li>
+                        <li>Hosting Support</li>
+                    </ul>
+                    <button> <a href="contact.html"> Order Now</a></button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <p>R190/month</p>
+                    <ul>
+                        <li>5GB Storage (SSD)</li>
+                        <li>Host 5 website domain</li>
+                        <li>FREE cPanel</li>
+                        <li>Unlimited bandwidth</li>
+                        <li>100 Email accounts</li>
+                        <li>Free SSL Certificate</li>
+                        <li>Free Website Migration</li>
+                        <li>Uptime guarantee</li>
+                        <li>Hosting Support</li>
+                    </ul>
+                    <button> <a href="contact.html"> Order Now</a></button>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
 
-
-
-
-    <div class="padding">
-        <div class="title">
-            <h1>Our Hosting Plans & Pricing</h1>
-        </div>
-        <section class="pricing-section ">
-
-            <div class="pricing-card">
-                <h2>STARTER</h2>
-                <p class="price">R99</p>
-                <ul>
-                    <li>1GB Storage</li>
-                    <li>Basic Support</li>
-                    <li>Limited Bandwidth</li>
-                </ul>
-                <button class="btn">Order now</button>
-            </div>
-            <div class="pricing-card">
-                <h2>BASIC</h2>
-                <p class="price">R149</p>
-                <ul>
-                    <li>5GB Storage</li>
-                    <li>Standard Support</li>
-                    <li>Unlimited Bandwidth</li>
-                </ul>
-                <button class="btn">Order now</button>
-            </div>
-            <div class="pricing-card">
-                <h2>PRO</h2>
-                <p class="price">R180</p>
-                <ul>
-                    <li>10GB Storage</li>
-                    <li>Premium Support</li>
-                    <li>Unlimited Bandwidth</li>
-                </ul>
-                <button class="btn">Order now</button>
-            </div>
-        </section>
-
-
-
-
-
-
-    </div>
     <section id="servicesSection" class="our-services">
         <div class="container">
             <h2>Our Services</h2>
@@ -139,178 +136,71 @@
                         <p>Welcome to Host-IT Services, your trusted partner in innovative web development solutions. We
                             are a team of passionate developers dedicated to creating exceptional websites tailored to
                             your unique needs.</p>
-                        <p>We believe that a well-crafted website is more than just an online presence, it's a powerful
-                            tool for success. Our expertise spans a wide range of technologies and frameworks, allowing
-                            us to deliver cutting-edge solutions that engage users and drive results.</p>
-                        <p>Whether you need a responsive and user-friendly website, a robust e-commerce platform, or a
-                            custom web application, we have the skills and creativity to bring your vision to life. From
-                            concept to launch, we work closely with you to ensure that your website reflects your brand
-                            identity and achieves your business goals.</p>
-                        <p>Let us be your partner in digital success. Elevate your online presence with our expert web
-                            development services.</p>
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="web-hosting">
                     <h3>Web Hosting & Domains</h3>
                     <div class="service-details">
-                        <p>We are your partner in navigating the ever-evolving world of digital marketing. We are a
-                            team of dedicated professionals passionate about driving results and maximizing your online
+                        <p>We are your partner in navigating the ever-evolving world of digital marketing. We are a team
+                            of dedicated professionals passionate about driving results and maximizing your online
                             presence.</p>
-                        <p>We understand that digital marketing is not just about reaching your audience - it's about
-                            engaging them, inspiring action, and building lasting relationships. With our expertise in
-                            digital strategies, we help businesses like yours connect with the right audience at the
-                            right
-                            time.</p>
-                        <p>From social media management and targeted advertising to SEO optimization and content
-                            marketing, we offer a comprehensive suite of services tailored to your unique needs. Our
-                            goal is to elevate your brand, increase your online visibility, and drive meaningful results
-                            that
-                            impact your bottom line.</p>
-                        <p> With us, you can expect personalized strategies, data-driven insights, and a team dedicated
-                            to your success. Let us be your guide in the digital landscape and watch your business
-                            thrive.</p>
-                        <p>Our company is proud to have a team of highly skilled and knowledgeable digital marketing
-                            professionals to provide the best possible services. Our expertise in these fields is
-                            reflected
-                            in our outstanding performance and makes us one of the best at what we do, we manage
-                            your social media, ex: Facebook, Instagram and more.
-                        </p>
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item">
-                    <h3>Website management</h3>
+                <div class="service-item" data-service="website-management">
+                    <h3>Website Management</h3>
                     <div class="service-details">
                         <p>Welcome to Host-IT Services, your trusted partner in effective website management. Our
                             dedicated team of experts is here to ensure that your online presence is not just maintained
                             but optimized for success.</p>
-                        <p>we understand the importance of a well-managed website in today's digital landscape. From
-                            regular updates and content management to ensuring seamless functionality and user
-                            experience, we handle it all.</p>
-
-                        <p>Our comprehensive website management services cover everything from website security to
-                            performance monitoring, ensuring that your site remains secure, up-to-date, and responsive
-                            across all devices.</p>
-                        <p> Let us take the hassle out of website management so you can focus on what matters most -
-                            growing your business. Partner with us for reliable and professional website management
-                            solutions.</p>
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item graphic-design">
-                    <h3>Graphic design</h3>
+                <div class="service-item" data-service="graphic-design">
+                    <h3>Graphic Design</h3>
                     <div class="service-details">
                         <p>Welcome to Host-IT Services, where creativity meets innovation in the world of graphic
                             design. We are a team of passionate designers committed to bringing your ideas to life
                             through stunning visual experiences.</p>
-
-                        <p>We understand the power of captivating design in making a lasting impression. From
-                            eye&nbsp;catching logos and branding to engaging marketing materials, we specialize in
-                            creating
-                            visuals that speak volumes about your brand.</p>
-
-                        <p>Whether you're looking to refresh your company's image, launch a new product campaign,
-                            or create impactful digital assets, we have the skills and expertise to deliver results that
-                            exceed your expectations.</p>
-                        <p>Our design process is collaborative and tailored to your needs, ensuring that each project is
-                            a unique reflection of your vision and goals. Let us be your partner in turning ideas into
-                            beautifully crafted designs that leave a lasting impact.
-                        <p></p>Discover the art of graphic design with us. Elevate your brand and captivate your
-                        audience
-                        with our creative solutions.
-                        </p>
-
-
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="it-support">
                     <h3>IT Support & Technical Assistance</h3>
                     <div class="service-details">
                         <p>Your go-to source for reliable IT support and technical assistance. We are dedicated
                             professionals ready to tackle all your technology challenges so you can focus on what
-                            matters most - your business</p>
-                        <p>we provide comprehensive IT support services designed to keep your systems running
-                            smoothly and efficiently. From troubleshooting hardware and software issues to setting up
-                            secure networks, we've got you covered.</p>
-                        <p>Our team of experts is here to assist you with prompt and effective solutions, whether you
-                            need help with computer repairs, network configuration, data backup, or any other technical
-                            needs.</p>
-                        <p>With us, you can trust that your technology is in capable hands. Let us handle the tech so
-                            you can get back to business.</p>
-
-
-
+                            matters most - your business.</p>
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item graphic-design1">
+                <div class="service-item" data-service="photography">
                     <h3>Photography</h3>
                     <div class="service-details">
-                        <p>At Host-IT Services, where moments are captured, and memories are preserved through the
-                            art of photography. We are passionate storytellers behind the lens, dedicated to creating
+                        <p>At Host-IT Services, where moments are captured, and memories are preserved through the art
+                            of photography. We are passionate storytellers behind the lens, dedicated to creating
                             timeless images that speak volumes.</p>
-                        <p>we understand the importance of capturing life's special moments from weddings and family
-                            portraits to corporate events and product photography. Our goal is to create stunning
-                            visuals
-                            that tell your unique story and leave a lasting impression.</p>
-                        <p>With a keen eye for detail and a commitment to excellence, we specialize in delivering
-                            high&nbsp;quality photography services that exceed expectations. Whether you're celebrating
-                            a
-                            milestone, showcasing your products, or documenting a special event, we have the creativity
-                            and expertise to bring your vision to life.</p>
-                        <p>Let us be your trusted partner in capturing the moments that matter most. Discover the
-                            beauty of storytelling through our photography services.
-                        </p>
-
-
-
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-service="branding">
                     <h3>Branding</h3>
                     <div class="service-details">
                         <p>Welcome to Host-IT Services, where brands come to life through strategic storytelling and
                             creative vision. We are a dedicated team of brand experts committed to shaping identities
-                            that resonate and inspire.
-                        </p>
-                        <p>we understand that a brand is more than just a logo - it's an experience, a promise, and a
-                            connection with your audience. Our mission is to help you build a strong and memorable
-                            brand that stands out in today's competitive landscape.</p>
-                        <p>From captivating crafting logos and visual identities to developing comprehensive brand
-                            strategies, we specialize in creating cohesive brand experiences that leave a lasting
-                            impact.
-                            Whether you're launching a new brand or revitalizing an existing one, we have the expertise
-                            and passion to bring your vision to fruition.
-                        </p>
-                        <p>Let us be your partner in building a brand that tells your story, captivates your audience,
-                            and
-                            drives success. Elevate your brand with our strategic branding solutions</p>
-
-
-
+                            that resonate and inspire.</p>
+                        <!-- Add more details as needed -->
                     </div>
                 </div>
-                <div class="service-item">
-                    <h3>IT Support & Technical Assistance</h3>
-                    <div class="service-details">
-                        <p>Your go-to source for reliable IT support and technical assistance. We are dedicated
-                            professionals ready to tackle all your technology challenges so you can focus on what
-                            matters most - your business</p>
-                        <p>we provide comprehensive IT support services designed to keep your systems running
-                            smoothly and efficiently. From troubleshooting hardware and software issues to setting up
-                            secure networks, we've got you covered.</p>
-                        <p>Our team of experts is here to assist you with prompt and effective solutions, whether you
-                            need help with computer repairs, network configuration, data backup, or any other technical
-                            needs.</p>
-                        <p>With us, you can trust that your technology is in capable hands. Let us handle the tech so
-                            you can get back to business.</p>
-
-
-
-                    </div>
-                </div>
-
                 <!-- Add other service items similarly -->
             </div>
         </div>
     </section>
+
+
+
+
 
 
 
